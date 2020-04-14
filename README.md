@@ -4,5 +4,5 @@
 
  * `use-model.ipynb`: Use fine-tuned multi-label classifier for prediction
  * `colab-tpu`: Folder contains notebooks to train the model on Colab TPU (Note: Grant anonymous read permission to GCS bucket before training on Colab TPU)
- 	- `data_prepare.ipynb`: To prepare data and save it to Tfrecord files
-        - `Train_tpu.ipynb`: Train on TPU using tf.data.Dataset
+ 	- `data_prepare.ipynb`: To prepare data and save it to Tfrecord files; <br/>Set `TFHUB_CACHE_DIR` environment variable to GCS bucket so that TPU can fetch BERT model from the cache
+    - `Train_tpu.ipynb`: Train on TPU using tf.data.Dataset
